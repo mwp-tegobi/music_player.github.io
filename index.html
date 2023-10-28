@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	
+	<!-- <script type="text/javascript" src="music_list.js"></script> -->
+	<script type="text/javascript" src="listado.js"></script>
+
+	<!-- <script type="commonjs" src="app.js"></script> -->
+
+	<title>Reproductor</title>
+</head>
+<body id="body_key">
+	<div class="container_music_logo_search">
+		<div class="container_logo">
+			<img class="container_logo_img" src="images/avalon_logo4.png">
+		</div>
+		<div class="container_search">
+			<input class="input_search_music_list" type="text" id="buscador" placeholder="Find your Artist">
+		</div>
+		<div class="container_musica">
+
+		</div>		
+	</div>
+	<div class="container_reproductor_general">
+		<div class="container_Name_ArtistAndSong">
+			<p class="name_song_mod">Name song</p>
+			<p class="name_artist_mod">--- Name Artist ---</p>
+		</div>
+		<div class="box_disc_playing">
+			<div class="winco_container">
+				<div class="circulo_referancia"></div>
+				<div class="winko_spin"></div>
+			</div>
+			<div class="vinilo_disk">
+				<div class="all_vinilos vinilo1 animation_first" id="vinilo_1"></div>
+				<div class="all_vinilos vinilo2 animation_second" id="vinilo_2"></div>
+				<div class="all_vinilos vinilo3 animation_third vinilo_over_winko" id="vinilo_3"></div>
+			</div>
+
+		</div>
+		<div class="box_current_time_general">
+			<div class="slider_current_time">
+				<input type="range" min="1" max="100" value="0" class="slide_current_progress">
+			</div>
+			<div class="slide_times">
+				<div class="time_inicio">00:00</div>
+				<div class="time_fin">00:00</div>
+			</div>
+		</div>
+
+		<div class="box_controls_general">
+			<div class="control_random">
+				<i class="fa-solid fa-shuffle"></i>
+			</div>
+			<div class="control_previus_song">
+				<i class="fa-solid fa-backward-step"></i>
+			</div>
+			<div class="control_play_pause" id="btn_play_pause">
+				<i class="fa-solid fa-play" id="play_btn"></i>
+			</div>
+			<div class="control_next_song">
+				<i class="fa-solid fa-forward-step"></i>
+			</div>
+			<div class="control_volume_general">
+				<div class="control_volume_slider">
+					<input type="range" min="0" max="100" value="100" class="slide_current_volume">
+				</div>
+				<i class="fa-solid fa-volume-high"></i>
+			</div>
+		</div>
+
+
+		
+	</div>
+	<div class="container_sesion_general"></div>
+
+
+	<script type="text/javascript" src="java-test.js"></script>
+</body>
+</html>
